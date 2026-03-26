@@ -1,0 +1,21 @@
+# Example book.toml settings for mdbook-gruvbox theme
+#
+# Copy these settings into your existing book.toml, or use as reference.
+# Full mdBook documentation: https://rust-lang.github.io/mdBook/
+
+#---------------------------------------------------------------------------
+# Project Settings (customize these)
+#---------------------------------------------------------------------------
+
+[book]
+title = "Your Project"
+description = "Brief description"
+src = "src"
+
+#---------------------------------------------------------------------------
+# mdbook-gruvbox Theme Configuration
+#---------------------------------------------------------------------------
+
+[output.html]
+# Point to the gruvbox theme directory
+theme = "gruvbox"
