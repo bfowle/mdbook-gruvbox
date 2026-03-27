@@ -1,0 +1,21 @@
+[package]
+name = "mdbook-gruvbox"
+version = "1.0.0"
+edition = "2024"
+description = "Gruvbox dark theme for mdBook"
+license = "MIT"
+repository = "https://github.com/bfowle/mdbook-gruvbox"
+keywords = ["mdbook", "gruvbox", "theme"]
+categories = ["command-line-utilities"]
+readme = "README.md"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+toml_edit = "0.22"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true

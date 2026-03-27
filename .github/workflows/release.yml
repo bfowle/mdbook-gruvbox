@@ -22,3 +22,11 @@ jobs:
         with:
           files: mdbook-gruvbox.zip
           generate_release_notes: true
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Publish to crates.io
+        run: cargo publish --allow-dirty
+        env:
+          CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}

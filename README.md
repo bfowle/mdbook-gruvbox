@@ -18,30 +18,30 @@ The theme applies Gruvbox's warm, retro color palette to your mdBook documentati
 
 - [mdBook](https://rust-lang.github.io/mdBook/) 0.4+ installed
 
-### Setup
+### Option 1: Cargo (recommended)
 
-1. **Get the Gruvbox theme**:
+```bash
+cargo install mdbook-gruvbox
+mdbook-gruvbox install ./path/to/book
+mdbook build ./path/to/book
+```
 
-   Download and extract the latest release into your book directory:
+The install command copies the theme files and updates your `book.toml` automatically.
 
-   ```bash
-   curl -sL https://github.com/bfowle/mdbook-gruvbox/releases/latest/download/mdbook-gruvbox.zip -o mdbook-gruvbox.zip
-   unzip mdbook-gruvbox.zip -d your-book/
-   rm mdbook-gruvbox.zip
-   ```
+### Option 2: Manual download
 
-2. **Configure your book.toml**:
+```bash
+curl -sL https://github.com/bfowle/mdbook-gruvbox/releases/latest/download/mdbook-gruvbox.zip -o mdbook-gruvbox.zip
+unzip mdbook-gruvbox.zip -d your-book/
+rm mdbook-gruvbox.zip
+```
 
-   ```toml
-   [output.html]
-   theme = "gruvbox"
-   ```
+Then add to your `book.toml`:
 
-3. **Build documentation**:
-
-   ```bash
-   mdbook build
-   ```
+```toml
+[output.html]
+theme = "gruvbox"
+```
 
 ## CSS Variables
 

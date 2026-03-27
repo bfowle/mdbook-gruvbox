@@ -1,6 +1,11 @@
 # Generated documentation
 book/
 
+# Rust / Cargo
+target/
+**/*.rs.bk
+*.pdb
+
 # OS files
 .DS_Store
 Thumbs.db
