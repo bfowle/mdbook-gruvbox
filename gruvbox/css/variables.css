@@ -59,6 +59,7 @@
  * mdBook Variable Overrides
  * All theme classes get the same Gruvbox dark values
  *---------------------------------------------------------------------------*/
+.gruvbox,
 .light,
 .rust,
 .coal,

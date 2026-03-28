@@ -7,6 +7,7 @@ const VARIABLES_CSS: &str = include_str!("../gruvbox/css/variables.css");
 const HIGHLIGHT_CSS: &str = include_str!("../gruvbox/highlight.css");
 const AYU_HIGHLIGHT_CSS: &str = include_str!("../gruvbox/ayu-highlight.css");
 const TOMORROW_NIGHT_CSS: &str = include_str!("../gruvbox/tomorrow-night.css");
+const INDEX_HBS: &str = include_str!("../gruvbox/index.hbs");
 
 #[derive(Parser)]
 #[command(name = "mdbook-gruvbox", about = "Gruvbox dark theme for mdBook")]
@@ -44,6 +45,7 @@ fn install(root: &PathBuf) -> Result<(), Box<dyn std::error::Error>> {
         (gruvbox_dir.join("highlight.css"), HIGHLIGHT_CSS),
         (gruvbox_dir.join("ayu-highlight.css"), AYU_HIGHLIGHT_CSS),
         (gruvbox_dir.join("tomorrow-night.css"), TOMORROW_NIGHT_CSS),
+        (gruvbox_dir.join("index.hbs"), INDEX_HBS),
     ];
 
     for (path, content) in &files {
@@ -62,6 +64,8 @@ fn install(root: &PathBuf) -> Result<(), Box<dyn std::error::Error>> {
         doc["output"]["html"] = toml_edit::Item::Table(toml_edit::Table::new());
     }
     doc["output"]["html"]["theme"] = toml_edit::value("gruvbox");
+    doc["output"]["html"]["default-theme"] = toml_edit::value("gruvbox");
+    doc["output"]["html"]["preferred-dark-theme"] = toml_edit::value("gruvbox");
 
     fs::write(&book_toml_path, doc.to_string())?;
     println!("  updated {}", book_toml_path.display());
