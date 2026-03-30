@@ -57,14 +57,9 @@
 
 /*---------------------------------------------------------------------------
  * mdBook Variable Overrides
- * All theme classes get the same Gruvbox dark values
+ * Gruvbox dark theme values (scoped to .gruvbox class)
  *---------------------------------------------------------------------------*/
-.gruvbox,
-.light,
-.rust,
-.coal,
-.navy,
-.ayu {
+.gruvbox {
     color-scheme: dark;
 
     /* Page colors */
@@ -134,21 +129,13 @@
     --blockquote-caution-color: var(--gruvbox-red);
 }
 
-/* Dark mode media query fallback */
-@media (prefers-color-scheme: dark) {
-    .light {
-        --bg: var(--gruvbox-bg0);
-        --fg: var(--gruvbox-fg1);
-    }
-}
-
 /*---------------------------------------------------------------------------
  * Direct Element Overrides
  * For elements that don't respect CSS variables
  *---------------------------------------------------------------------------*/
 
 /* Link hover */
-.content a:hover {
+.gruvbox .content a:hover {
     color: var(--gruvbox-yellow);
 }
 

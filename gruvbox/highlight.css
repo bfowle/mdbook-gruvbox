@@ -1,6 +1,6 @@
 /* Gruvbox Dark syntax highlighting for highlight.js */
 
-.hljs {
+.gruvbox .hljs {
     display: block;
     overflow-x: auto;
     background: var(--gruvbox-bg0-hard);
@@ -8,92 +8,92 @@
 }
 
 /* Comments */
-.hljs-comment,
-.hljs-quote {
+.gruvbox .hljs-comment,
+.gruvbox .hljs-quote {
     color: var(--gruvbox-gray);
     font-style: italic;
 }
 
 /* Keywords */
-.hljs-keyword,
-.hljs-selector-tag {
+.gruvbox .hljs-keyword,
+.gruvbox .hljs-selector-tag {
     color: var(--gruvbox-red);
 }
 
 /* Strings */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet {
+.gruvbox .hljs-string,
+.gruvbox .hljs-symbol,
+.gruvbox .hljs-bullet {
     color: var(--gruvbox-green);
 }
 
 /* Numbers, literals, types */
-.hljs-number,
-.hljs-literal,
-.hljs-type,
-.hljs-params {
+.gruvbox .hljs-number,
+.gruvbox .hljs-literal,
+.gruvbox .hljs-type,
+.gruvbox .hljs-params {
     color: var(--gruvbox-purple);
 }
 
 /* Built-ins */
-.hljs-built_in,
-.hljs-builtin-name {
+.gruvbox .hljs-built_in,
+.gruvbox .hljs-builtin-name {
     color: var(--gruvbox-orange);
 }
 
 /* Functions, titles, sections */
-.hljs-title,
-.hljs-section {
+.gruvbox .hljs-title,
+.gruvbox .hljs-section {
     color: var(--gruvbox-yellow);
 }
 
 /* Attributes, variables */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-attribute,
-.hljs-attr {
+.gruvbox .hljs-variable,
+.gruvbox .hljs-template-variable,
+.gruvbox .hljs-attribute,
+.gruvbox .hljs-attr {
     color: var(--gruvbox-blue);
 }
 
 /* Tags, names */
-.hljs-tag,
-.hljs-name {
+.gruvbox .hljs-tag,
+.gruvbox .hljs-name {
     color: var(--gruvbox-red);
 }
 
 /* Regex, links */
-.hljs-regexp,
-.hljs-link {
+.gruvbox .hljs-regexp,
+.gruvbox .hljs-link {
     color: var(--gruvbox-green);
 }
 
 /* Selectors */
-.hljs-selector-id,
-.hljs-selector-class {
+.gruvbox .hljs-selector-id,
+.gruvbox .hljs-selector-class {
     color: var(--gruvbox-aqua);
 }
 
 /* Meta/preprocessor */
-.hljs-meta {
+.gruvbox .hljs-meta {
     color: var(--gruvbox-yellow-dim);
 }
 
 /* Emphasis */
-.hljs-emphasis {
+.gruvbox .hljs-emphasis {
     font-style: italic;
 }
 
-.hljs-strong {
+.gruvbox .hljs-strong {
     font-weight: bold;
 }
 
 /* Diff */
-.hljs-addition {
+.gruvbox .hljs-addition {
     color: var(--gruvbox-green);
     background-color: rgba(184, 187, 38, 0.1);
 }
 
-.hljs-deletion {
+.gruvbox .hljs-deletion {
     color: var(--gruvbox-red);
     background-color: rgba(251, 73, 52, 0.1);
 }

@@ -40,7 +40,10 @@ Then add to your `book.toml`:
 
 ```toml
 [output.html]
-theme = "gruvbox"
+additional-css = ["gruvbox/css/variables.css", "gruvbox/highlight.css"]
+additional-js = ["gruvbox/gruvbox.js"]
+default-theme = "gruvbox"
+preferred-dark-theme = "gruvbox"
 ```
 
 ## CSS Variables
