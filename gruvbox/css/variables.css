@@ -134,6 +134,14 @@
  * For elements that don't respect CSS variables
  *---------------------------------------------------------------------------*/
 
+/* Inline code */
+.gruvbox :not(pre) > code {
+    color: var(--inline-code-color);
+    background-color: var(--gruvbox-bg1);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
 /* Link hover */
 .gruvbox .content a:hover {
     color: var(--gruvbox-yellow);
