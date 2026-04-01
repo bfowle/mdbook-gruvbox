@@ -1,5 +1,9 @@
 # mdBook Gruvbox Theme
 
+[![Crates.io](https://img.shields.io/crates/v/mdbook-gruvbox)](https://crates.io/crates/mdbook-gruvbox)
+[![Crates.io Downloads](https://img.shields.io/crates/d/mdbook-gruvbox)](https://crates.io/crates/mdbook-gruvbox)
+[![License: MIT](https://img.shields.io/crates/l/mdbook-gruvbox)](LICENSE)
+
 A [Gruvbox](https://github.com/morhetz/gruvbox) dark color scheme for [mdBook](https://rust-lang.github.io/mdBook/) documentation.
 
 ## Preview

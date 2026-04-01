@@ -1,6 +1,6 @@
 /* Gruvbox Dark syntax highlighting for highlight.js */
 
-.gruvbox .hljs {
+.gruvbox pre .hljs {
     display: block;
     overflow-x: auto;
     background: var(--gruvbox-bg0-hard);
